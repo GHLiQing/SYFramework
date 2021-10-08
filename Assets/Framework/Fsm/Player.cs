@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using SYFramework.FSM;
+using SYFramework;
 public class Player : MonoBehaviour
 {
 	private FsmSystem fsmSystem;
