@@ -12,22 +12,30 @@ namespace SYFramework
 		public Text score_Txt;
 
 		public Text gameName_txt;
-	
+
+
+
+		public IModel model;
 		private void Awake()
 		{
-	
-			//订阅
-			GameData.Score.SubscribeToText(score_Txt);
+			model = new GameData();
 
-			GameData.Name.SubscribeToText(gameName_txt);
+			
+				
+
+			//订阅
+			model.Score.SubscribeToText(score_Txt);
+
+			model.Name.SubscribeToText(gameName_txt);
 
 			//发送消息
 			send_Btn.OnClickAsObservable().Subscribe(_ => {
 
-				GameData.Name.Value = "游戏数据";
+				model.Name.Value = "游戏数据";
 
-				GameData.Score.Value = 20;
+				model.Score.Value = Random.Range(1,100);
 			});
+
 
 
 		}
