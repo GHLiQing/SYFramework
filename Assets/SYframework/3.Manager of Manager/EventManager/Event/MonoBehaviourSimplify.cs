@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	/// <summary>
 	/// 继承这个类用于扩展

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public static class MyUtilities
 	{

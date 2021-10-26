@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public class EventTriggerListener : EventTrigger
 	{

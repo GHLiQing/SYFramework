@@ -5,7 +5,7 @@ using UnityEditor;
 using System.IO;
 using System.Text;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	/// <summary>
 	/// webGL打包场景配置文件

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using DG.Tweening;
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public class WowMainCamera : MonoBehaviour
 	{

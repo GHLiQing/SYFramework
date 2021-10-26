@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-namespace QFramework.LQ.Evnet
+namespace SYFramework.LQ.Evnet
 {
 	/// <summary>
 	/// 事件服务对象

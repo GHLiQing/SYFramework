@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	/// <summary>
 	/// 静态扩展 this 用于 MonoBehaviour 调用

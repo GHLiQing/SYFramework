@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework;
+using SYFramework;
 namespace LQFramework
 {
 	public class ObjectDestroy : MonoBehaviour, IReusable

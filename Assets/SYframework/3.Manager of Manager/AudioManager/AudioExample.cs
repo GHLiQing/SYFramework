@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	public class AudioExample : MonoBehaviourSimplify
 	{
@@ -17,25 +17,25 @@ namespace QFramework.LQ.single
 		}
 #endif
 
-		IEnumerator  Start()
-		{
-			Debug.Log("加载资源");
-			var load = Resources.Load<AudioClip>("shenbo");
-			yield return new WaitForSeconds(5f);
-			Resources.UnloadAsset(load);
-			Debug.Log("卸载资源");
-		}
+		//IEnumerator  Start()
+		//{
+		//	Debug.Log("加载资源");
+		//	var load = Resources.Load<AudioClip>("shenbo");
+		//	yield return new WaitForSeconds(10f);
+		//	Resources.UnloadAsset(load);
+		//	Debug.Log("卸载资源");
+		//}
 		private void Awake()
 		{
 
-			//AudioManager.Instance.PlaySound("Shengbo");
+			//AudioManager.Instance.PlaySound("Shengbo",GetComponent<AudioClip>());
 
-			//AudioManager.GetInstance.PlayMusic("bg", true);
+			AudioManager.Instance.PlayMusic(Resources.Load<AudioClip>("bg"), true);
 			this.Delay(4f, () =>
 			{
 				//AudioManager.GetInstance.PauseMusic() ;
 
-				AudioManager.Instance.SoundOff();
+				//AudioManager.Instance.SoundOff();
 
 
 			});
@@ -47,7 +47,7 @@ namespace QFramework.LQ.single
 			this.Delay(10f, () =>
 			{
 				//AudioManager.GetInstance.StopMusic();
-				AudioManager.Instance.SoundOn();
+				//AudioManager.Instance.SoundOn();
 
 			});
 			this.Delay(15f, () =>
@@ -59,13 +59,13 @@ namespace QFramework.LQ.single
 			this.Delay(20f, () =>
 			{
 				//AudioManager.GetInstance.MusicOff();
-				Debug.Log("静音");
+				//Debug.Log("静音");
 
 			});
 			this.Delay(25f, () =>
 			{
 				//AudioManager.GetInstance.MusicOn();
-				Debug.Log("取消静音");
+				//Debug.Log("取消静音");
 			});
 
 

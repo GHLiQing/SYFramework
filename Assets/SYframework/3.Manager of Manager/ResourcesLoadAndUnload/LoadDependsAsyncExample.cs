@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 using UnityEditor;
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	public class LoadDependsAsyncExample : MonoBehaviour
 	{

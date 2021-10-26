@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	/// <summary>
 	/// 引用计数器 工具

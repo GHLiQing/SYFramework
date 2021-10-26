@@ -4,7 +4,7 @@ using UnityEngine;
 //Res 负责加载、卸载的操作。
 //ResLoader 负责记录目标脚本已经加载的资源。
 //ResMgr 负责维护全局的资源缓存池。
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	/// <summary>
 	/// 加载的状态

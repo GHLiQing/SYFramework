@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 
-namespace QFramework.LQ.Evnet
+namespace SYFramework.LQ.Evnet
 {
 
 	public class Tclass<T>

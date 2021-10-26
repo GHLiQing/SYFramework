@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System.IO;
 using UnityEditor;
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public class AssetBundleExporter : MonoBehaviour
 	{

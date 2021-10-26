@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	/// <summary>
 	/// 从AssetBundle 中加载资源

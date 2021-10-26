@@ -2,11 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	public class AudioManager : MonoSingleton<AudioManager>
 	{
-
 		/// <summary>
 		/// 播放音频使用
 		/// </summary>

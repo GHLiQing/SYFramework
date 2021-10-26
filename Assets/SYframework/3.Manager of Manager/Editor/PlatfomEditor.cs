@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEditor;
 using System;
 using System.IO;
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public class PlatfomEditor
 	{

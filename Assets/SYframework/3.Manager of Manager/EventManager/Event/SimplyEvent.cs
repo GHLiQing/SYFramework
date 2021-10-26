@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public class SimplyExample : MonoBehaviourSimplify
 	{

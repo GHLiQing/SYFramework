@@ -1,8 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework.LQ.single;
-namespace QFramework.LQ.single
+using SYFramework.LQ.single;
+namespace SYFramework.LQ.single
 {
 	/// <summary>
 	/// 维护安全的资源池

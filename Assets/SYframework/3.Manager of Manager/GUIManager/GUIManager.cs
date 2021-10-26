@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	public enum UILayer
 	{

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace QFramework.LQ
+namespace SYFramework.LQ
 {
 	/// <summary>
 	/// 静态this 扩展

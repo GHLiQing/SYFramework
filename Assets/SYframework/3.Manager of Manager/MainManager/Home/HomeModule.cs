@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework.LQ;
+using SYFramework.LQ;
 namespace Game
 {
 	public class HomeModule : MainManager

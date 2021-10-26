@@ -1,12 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using QFramework.LQ.single;
+using SYFramework.LQ.single;
 using System;
 /// <summary>
 /// 33 异步加载资源
 /// </summary>
-namespace QFramework.LQ.single
+namespace SYFramework.LQ.single
 {
 	/// <summary>
 	/// 资源加载 服务类 

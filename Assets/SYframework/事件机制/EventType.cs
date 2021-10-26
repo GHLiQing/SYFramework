@@ -8,7 +8,7 @@ using System;
 /// 模块于模块之间通信： 直接调用这个就可以了
 /// 模块内部消息机制,直接创建服务对象 用于模块自己使用
 /// </summary>
-namespace QFramework.LQ.Evnet
+namespace SYFramework.LQ.Evnet
 {
 
 	//定义注册事件的 接口

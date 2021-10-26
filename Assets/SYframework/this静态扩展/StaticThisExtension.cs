@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 
-namespace QFramework.LQ
+namespace SYFramework
 {
 	public static class StaticThisExtension
 	{
