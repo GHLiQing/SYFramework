@@ -7,20 +7,12 @@ namespace SYFramework
 	
 	public class StaticThisExtensionExample : MonoBehaviour
 	{
-		/// <summary>
-		/// 显示游戏物体
-		/// </summary>
-		private void ShowGameObje()
-		{
-			gameObject.SetActive(true);
-		}
 
-		/// <summary>
-		/// 隐藏游戏物体
-		/// </summary>
-		private void HideGameobject()
+		private void Awake()
 		{
-			gameObject.SetActive(false);
+			//直接this 调用
+			this.Show();
+			this.Hide();
 		}
 
 	}
@@ -33,13 +25,13 @@ namespace SYFramework
 		public static void Show(this MonoBehaviour self)
 		{
 			Debug.Log("显示");
-			self.Show();
+			self.gameObject.SetActive(true);
 		}
 
 		public static void Hide(this MonoBehaviour self)
 		{
 			Debug.Log("隐藏");
-			self.Hide();
+			self.gameObject.SetActive(false);
 		}
 
 	}

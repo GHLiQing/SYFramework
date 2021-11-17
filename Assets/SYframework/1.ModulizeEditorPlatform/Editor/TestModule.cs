@@ -4,9 +4,15 @@ using UnityEngine;
 
 namespace FrameworkDesign2021
 {
-	public class TestModule : IEditorPlatformModule
+	public class BaseModule : IEditorPlatformModule
 	{
-
+		public PageId pageId {
+			get
+			{
+				return PageId.BasePage;
+			}
+			
+		}
 
 		public void OnGUI()
 		{
@@ -18,6 +24,27 @@ namespace FrameworkDesign2021
 			
 		}
 
+	}
+
+
+	public class UserMoudule : IEditorPlatformModule
+	{
+		public PageId pageId {
+			get
+			{
+				return PageId.UserPage;
+			}
+		}
+
+		public void OnGUI()
+		{
+			GUILayout.Label("这个是第二个新的模块", new GUIStyle()
+			{
+				fontSize = 30
+			});
+
+
+		}
 	}
 }
 

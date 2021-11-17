@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SYFramework.LQ.single
+namespace SYFramework.single
 {
 	/// <summary>
 	/// 普通类单例

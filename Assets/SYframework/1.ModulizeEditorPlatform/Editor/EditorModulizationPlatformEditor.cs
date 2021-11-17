@@ -7,6 +7,15 @@ using System.Linq;
 
 namespace FrameworkDesign2021
 {
+
+	/// <summary>
+	/// 页面枚举管理
+	/// </summary>
+	public enum PageId
+	{
+		BasePage,//基础页
+		UserPage //用户页
+	}
 	public class EditorModulizationPlatformEditor : EditorWindow
 	{
 		/// <summary>
@@ -56,13 +65,22 @@ namespace FrameworkDesign2021
 			editorPlatform.Show();
 		}
 
+
+		private PageId mCurrentPageid;
 		private void OnGUI()
 		{
+
+			mCurrentPageid = (PageId)GUILayout.Toolbar((int)mCurrentPageid, Enum.GetNames(typeof(PageId)));
+
 			// 渲染
 			foreach (var editorPlatformModule in mModules)
 			{
-				//Debug.Log(editorPlatformModule.ToString());
-				editorPlatformModule.OnGUI();
+				if (mCurrentPageid== editorPlatformModule.pageId)
+				{
+					editorPlatformModule.OnGUI();
+				}
+				
+
 			}
 		}
 

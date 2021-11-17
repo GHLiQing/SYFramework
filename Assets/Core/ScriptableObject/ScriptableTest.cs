@@ -41,7 +41,7 @@ namespace SYFramework
 	public class Test{
 
 
-		[MenuItem("SYFramework/Step/TestStep")]
+		//[MenuItem("SYFramework/Step/TestStep")]
 		public static void CreatScirptable()
 		{
 			Step step = ScriptableObject.CreateInstance<Step>();

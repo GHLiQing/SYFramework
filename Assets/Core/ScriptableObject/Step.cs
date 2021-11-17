@@ -8,7 +8,7 @@ namespace SYFramework
 	/// ScriptableObject
 	/// 
 	/// </summary>
-	[CreateAssetMenu(menuName ="Task/Step")]
+	//[CreateAssetMenu(menuName ="Task/Step")]
 	public class Step : ScriptableObject
 	{
 		public string Name;

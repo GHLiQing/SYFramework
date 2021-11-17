@@ -6,6 +6,8 @@ namespace FrameworkDesign2021
 {
 	public interface  IEditorPlatformModule 
 	{
+
+		PageId pageId { get; }
 		/// <summary>
 		/// 渲染GUI使用		
 		/// </summary>

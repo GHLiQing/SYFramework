@@ -10,7 +10,7 @@ namespace  LQFramework
 
         private EditorMoudleContainer mContainer;
         //打开窗口
-        [MenuItem("LQFramework/LQUtils/0.EditorModulizationPlatform")]
+        //[MenuItem("LQFramework/LQUtils/0.EditorModulizationPlatform")]
         public static void Open()
         {
 

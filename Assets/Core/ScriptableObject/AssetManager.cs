@@ -4,7 +4,7 @@ using UnityEngine;
 
 namespace SYFramework
 {
-	[CreateAssetMenu(menuName ="Task/AssetManager")]
+	//[CreateAssetMenu(menuName ="Task/AssetManager")]
 	public class AssetManager:ScriptableObject
 	{
 		#region µ¥ÀıĞ´·¨
