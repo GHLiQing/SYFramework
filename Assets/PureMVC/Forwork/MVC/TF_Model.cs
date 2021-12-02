@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 /// <summary>
-/// 模型类
+/// 模型类 继承即可
 /// </summary>
 public  abstract class TF_Model 
 {

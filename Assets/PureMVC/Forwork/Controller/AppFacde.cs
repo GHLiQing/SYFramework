@@ -21,13 +21,19 @@ public class AppFacde : MonoSingleton<AppFacde>
 	public void RegisterCommand(string name,Type type)
 	{
 		TF_PureMVC.RegisterCommand(name, type);
-		//SY_PureMVC.RegisterCommand(name, type);
+		
 	}
 
+	/// <summary>
+	/// 发送消息 
+	/// view视图
+	/// </summary>
+	/// <param name="name"></param>
+	/// <param name="data"></param>
 	public void SendNotification(string name,object data=null)
 	{
 		TF_PureMVC.SendMsg(name, data);
-		//SY_PureMVC.SendSmg(name, data);
+		
 	}
 
 }

@@ -34,7 +34,6 @@ namespace SYFramework.LQ
 				}
 				return mPrivateUIRoot;
 			}
-			
 		}
 
 		//用于卸载使用

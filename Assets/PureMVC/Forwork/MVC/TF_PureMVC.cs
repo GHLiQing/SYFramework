@@ -123,8 +123,7 @@ public class TF_PureMVC
 			//使用命令对象  用完之后释放
 			TF_Controller commnd = Activator.CreateInstance(Commands[name]) as TF_Controller;
 			commnd.Execute(data);
-			//var changescen=  Commands[name] as ChangeScene;
-			//changescen.Execute(data);
+			
 			
 		}
 		//判断视图是否关注该事件，如果关注，则执行事件
