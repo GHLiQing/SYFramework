@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SYFramework.single
+namespace SYFramework.Singleton
 {
 	/// <summary>
-	/// 普通类单例
+	/// 普通类单例 
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	public abstract class SingletonNomal<T> where T : SingletonNomal<T>

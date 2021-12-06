@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using SYFramework.Singleton;
 namespace SYFramework.LQ
 {
 	public enum UILayer
@@ -70,7 +70,7 @@ namespace SYFramework.LQ
 		/// <returns></returns>
 		public static GameObject LoadPanel(string panelName,UILayer uILayer)
 		{
-			var panelprefabs = Resources.Load<GameObject>(panelName);
+			var panelprefabs = Resources. Load<GameObject>(panelName);
 			var go = GameObject.Instantiate<GameObject>(panelprefabs);
 			go.name = panelName;
 			

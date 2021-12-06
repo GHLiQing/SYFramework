@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SYFramework.single
+namespace SYFramework.Singleton
 {
 	public class SingleExample : SingletonNomal<SingleExample>
 	{

@@ -23,6 +23,7 @@ namespace Game
 			Delay(5f, () =>
 			{
 				GameModule.LoadModule();
+				
 			});
 			
 		}

@@ -17,6 +17,7 @@ namespace Game
 		{
 			SceneManager.LoadScene("Game");
 		}
+
 		protected override void LaunchInDevelopingMode()
 		{
 			//开发逻辑

@@ -8,9 +8,11 @@ namespace SYFramework
 	/// ÆÕÍ¨µ¥Àý
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
-	public abstract class Single<T> where T:Single<T>
+	public abstract class Single<T> where T : Single<T>
 	{
 		protected static T mInstance = null;
+
+		protected Single(){ }
 
 	
 		public static T Instance

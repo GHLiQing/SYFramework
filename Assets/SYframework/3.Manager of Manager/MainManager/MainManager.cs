@@ -25,7 +25,7 @@ namespace SYFramework.LQ
 
 		public EnvironmentMode Mode;
 
-		private EnvironmentMode mSharedmode;
+		private static EnvironmentMode mSharedmode;
 		private static bool mModeSetted = false;
 		//在开发阶段需要一个有一个流程的
 		//用于切换入口

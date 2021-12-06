@@ -9,13 +9,9 @@ namespace SYFramework
 	/// œÏ”¶ Ω Ù–‘
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
-	public class BindableProprety<T> : IEquatable<T>
+	public class BindableProprety<T>
 	{
-		public bool Equals(T other)
-		{
-			return false;
-		}
-
+		
 		private T values;
 
 		public T Valuse
@@ -24,7 +20,7 @@ namespace SYFramework
 
 			set
 			{
-				if (! values.Equals(value))
+				if (!values.Equals(value))
 				{
 					values = value;
 					onRecive?.Invoke(value);
