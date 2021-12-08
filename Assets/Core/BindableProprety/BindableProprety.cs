@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
-namespace SYFramework
+namespace SYFramework.Example
 {
 
 	/// <summary>
@@ -20,15 +20,41 @@ namespace SYFramework
 
 			set
 			{
-				if (!values.Equals(value))
-				{
-					values = value;
-					onRecive?.Invoke(value);
-				}
+				values = value;
+				onRecive?.Invoke(value);
 			}
 		}
 
-		private Action<T> onRecive;
+		public Action<T> onRecive=(value)=> { };
+
+		public IUnRegister Regsiter(Action<T> onEvent)
+		{
+			onRecive += onEvent;
+			return new BindablePropretyUnRegister<T>()
+			{
+				bindableProprety = this,
+				OnEvent = onEvent
+			};
+		}
+
+		public void UnRegisterOnValueChanged(Action<T> onEvent)
+		{
+			onRecive -= onEvent;
+		}
+		
 	}
+
+	public class BindablePropretyUnRegister<T> : IUnRegister
+	{
+		public BindableProprety<T> bindableProprety { get; set; }
+
+		public Action<T> OnEvent { get; set; }
+		public void UnRegister()
+		{
+			bindableProprety.UnRegisterOnValueChanged(OnEvent);
+		
+		}
+	}
+
 
 }

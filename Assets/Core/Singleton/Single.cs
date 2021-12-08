@@ -6,6 +6,7 @@ namespace SYFramework
 {
 	/// <summary>
 	/// 普通单例
+	/// 使用规则: 继承这个类需要在子类创建一个无参的保护的构造方法
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	public abstract class Single<T> where T : Single<T>
@@ -37,6 +38,7 @@ namespace SYFramework
 
 	/// <summary>
 	/// 继承mono
+	/// 使用规则： 直接继承即可
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	public abstract class MonoSingleton<T> :MonoBehaviour where T : MonoSingleton<T>
@@ -50,7 +52,7 @@ namespace SYFramework
 				mInstance=FindObjectOfType<T>();
 				if (FindObjectsOfType<T>().Length>0)
 				{
-					Debug.Log("已经存在单例"+typeof(T).Name);
+					Debug.Log("已经存在单例:"+typeof(T).Name);
 					return mInstance;
 				}
 				if (mInstance==null)

@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
 using System.IO;
-using SYFramework.LQ.single;
+
 using System.Linq;
-namespace SYFramework
+namespace SYFramework.Res
 {
 	public class AssetBundleExample : MonoBehaviour
 	{

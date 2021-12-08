@@ -6,6 +6,7 @@ namespace SYFramework.Singleton
 {
 	/// <summary>
 	/// 普通类单例 
+	/// 注意：使用的时候需要在子类创建一个保护的构造函数
 	/// </summary>
 	/// <typeparam name="T"></typeparam>
 	public abstract class SingletonNomal<T> where T : SingletonNomal<T>

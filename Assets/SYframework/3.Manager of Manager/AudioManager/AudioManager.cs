@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace SYFramework.LQ.single
+namespace SYFramework
 {
 	public class AudioManager : MonoSingleton<AudioManager>
 	{
