@@ -1,12 +1,14 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEditor;
-namespace SYFramework.LQ
+namespace Reskit
 {
 	public class ResourceReloadingExample : MonoBehaviour
 	{
-		[MenuItem("FrameworkDesign2021/Moudle/13 资源加载重复的问题   (New)",false,13)]
+#if UNITY_EDITOR
+
+
+		[UnityEditor. MenuItem("FrameworkDesign2021/Moudle/13 资源加载重复的问题   (New)",false,13)]
 		public static void ResourcesReloading()
 		{
 			UnityEditor.EditorApplication.isPlaying = true;
@@ -14,7 +16,7 @@ namespace SYFramework.LQ
 			new GameObject(typeof(ResourceReloadingExample).Name).AddComponent<ResourceReloadingExample>();
 		}
 
-
+#endif
 		public void Awake()
 		{
 			var loadasset = Load<GameObject>("LoadCube");

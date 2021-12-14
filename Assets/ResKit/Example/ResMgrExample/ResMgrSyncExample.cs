@@ -4,17 +4,20 @@ using UnityEngine;
 using UnityEditor;
 namespace Reskit
 {
-	public class ResMgrExample : MonoBehaviour
+	/// <summary>
+	/// 同步加载测试
+	/// </summary>
+	public class ResMgrSyncExample : MonoBehaviour
 	{
 
 #if UNITY_EDITOR
 
-		[MenuItem("FrameworkDesign2021 / Moudle / 11.ResMgrExample   (New)", false,11)]
+		[MenuItem("FrameworkDesign2021 / Moudle / 11.ResMgrSyncExample 同步加载  (New)", false,11)]
 		public static void MenuOnClick()
 		{
 			UnityEditor.EditorApplication.isPlaying = true;
 
-			new GameObject(nameof(ResMgrExample)).AddComponent<ResMgrExample>();
+			new GameObject(nameof(ResMgrSyncExample)).AddComponent<ResMgrSyncExample>();
 		}
 
 
