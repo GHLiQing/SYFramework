@@ -1,0 +1,2 @@
+Assets/SYFramework/3.Manager of Manager/MainManager/Home/Home.unity
+Assets/SYFramework/3.Manager of Manager/MainManager/Game/Game.unity

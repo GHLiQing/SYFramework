@@ -1,0 +1,14 @@
+ManifestFileVersion: 0
+CRC: 77682960
+AssetBundleManifest:
+  AssetBundleInfos:
+    Info_0:
+      Name: sphereab
+      Dependencies: {}
+    Info_1:
+      Name: titesprite
+      Dependencies: {}
+    Info_2:
+      Name: gameobject_prefabs
+      Dependencies:
+        Dependency_0: titesprite

@@ -7,10 +7,12 @@ namespace SYFramework.Singleton
 	public class MonoSingleton<T> :MonoBehaviour where T:MonoSingleton<T>
 	{
 		protected static T mInstance = null;
+		
 		public static T Instance
 		{
 			get
 			{
+				
 				//首先查找是否拥有该类型的单例
 				if (mInstance==null)
 				{
@@ -27,12 +29,10 @@ namespace SYFramework.Singleton
 					var instanceName = typeof(T).Name;
 					var instaceObj = GameObject.Find(instanceName);
 					if (!instaceObj)
-					{
 						instaceObj = new GameObject(instanceName);
-					}
 					mInstance = instaceObj.AddComponent<T>();
 					DontDestroyOnLoad(instaceObj);
-					Debug.Log("add new gameObject" + mInstance.name);
+					Debug.Log("Add new gameObject:" + mInstance.name);
 				}
 				else
 				{
@@ -44,6 +44,7 @@ namespace SYFramework.Singleton
 
 		protected virtual void OnDestroy()
 		{
+			
 			mInstance = null;
 		}
 	}

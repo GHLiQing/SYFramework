@@ -12,8 +12,12 @@ namespace SYFramework.LQ
 	/// </summary>
 	public class WriteBuilInfo 
 	{
-		
-		[MenuItem("打包配置/写打包场景文件")]
+
+#if UNITY_EDITOR
+
+		[MenuItem("webGL打包场景配置文件/打包配置/写打包场景文件")]
+
+#endif
 		private static void WriteAllScenesLevels()
 		{
 			if (UnityEditor.EditorBuildSettings.scenes.Length>0)
@@ -31,8 +35,9 @@ namespace SYFramework.LQ
 			}
 		}
 
-		 
-		[MenuItem("打包配置/写打包保存地址")]
+#if UNITY_EDITOR
+		[MenuItem("webGL打包场景配置文件/打包配置/写打包保存地址")]
+#endif
 		private static void WriteAllBuilOathLevels()
 		{
 			//选择文件位置
